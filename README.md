@@ -2,32 +2,48 @@
 
 Ride Safe is a comprehensive Flutter-based mobile application designed to bridge the communication gap between parents, school van drivers, and vehicle owners. It provides real-time GPS tracking, attendance management, and secure communication for school transportation.
 
-## ✨ Key Features
+##  Key Features
 
-### 👤 For Parents
+### 👨‍👩‍👧‍👦 For Parents
+
+![Parent Dashboard](assets/images/1.png)
+_The Parent interface offering a map for real-time tracking, attendance status, and quick access to fee payments._
+
 * **Real-time Tracking:** Track the exact location of the school van on a live map.
 * **Child Management:** Add multiple children and assign them to specific vans.
 * **Attendance Notifications:** Receive instant alerts when your child boards or drops off.
 * **Secure Payments:** Handle transport fee payments directly through the app.
 
-### 🚐 For Drivers
+### 🛞 For Drivers
+
+![Driver Interface](assets/images/3.png)
+_The Driver interface designed for easy daily route management, broadcast tracking, and one-tap digital attendance._
+
 * **Interactive Dashboard:** Manage daily routes, assigned students, and notices.
 * **Live Location Sharing:** Broadcast real-time location using Mapbox integration.
 * **Digital Attendance:** Mark student attendance with a simple tap.
 * **Payment Tracking:** Monitor pending and completed payments from parents.
 
-### 🏢 For Vehicle Owners
+### 🚐 For Vehicle Owners
+
+![Vehicle Owner View](assets/images/2.png)
+_The Vehicle Owner dashboard for managing fleet operations, assigning drivers, and tracking vehicle assignments._
+
 * **Fleet Management:** Register and manage multiple transport vehicles.
 * **Driver Assignment:** Assign drivers to specific vehicles efficiently.
 * **Vehicle Insights:** Track vehicle details and operational status.
 
 ## 🛠️ Technology Stack
+
+![Technology Stack](assets/images/4.png)
+_Ride Safe relies on a robust stack combining Flutter for cross-platform UI, Firebase for backend services, Mapbox for map views + smooth location tracking and Places API for select and store the place by searching ._
+
 * **Framework:** Flutter (Dart)
 * **Backend:** Firebase (Authentication, Firestore, Realtime Database, Cloud Storage)
 * **Maps & Location:** Mapbox, Google Maps Flutter, Geolocator
 * **State Management:** Provider / setState
 
-## 🏗️ Application Architecture & Software Design
+##  Application Architecture & Software Design
 
 ### High-level Overview
 Ride Safe is structured as a modular Flutter app separating UI, services, and data layers. The app supports three primary user roles — Parents, Drivers, and Vehicle Owners — each with dedicated screens and flows found under `lib/` (for example `driver_home.dart`, `vehicle_owner_home.dart`, `c_home_page.dart`). Core responsibilities are delegated to small, focused services under `lib/services/` (`auth_service.dart`, `location_service.dart`, `notification_service.dart`, `vehicle_service.dart`).
